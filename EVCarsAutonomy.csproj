@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Asets\battery-removebg.png" />
+    <None Remove="Asets\calculator.png" />
+    <None Remove="Asets\close.png" />
+    <None Remove="Asets\exit.png" />
+    <None Remove="Asets\home.png" />
+    <None Remove="Asets\masinuta.png" />
+    <None Remove="Asets\minimize.png" />
+    <None Remove="Asets\search.png" />
+    <None Remove="Asets\uralogo.png" />
+    <None Remove="Fonts\towerofsilence.ttf" />
+    <None Remove="Fonts\towerofsilenceital.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Asets\battery-removebg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\calculator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\masinuta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\minimize.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\uralogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\towerofsilence.ttf" />
+    <Resource Include="Fonts\towerofsilenceital.ttf" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+﻿<Page x:Class="EVCarsAutonomy.AnalyzePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EVCarsAutonomy"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AnalyzePage">
+
+    <Grid    Background="#F9F6EE">
+        <!--Viteza Medie-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="61,84,0,0" TextWrapping="Wrap" Text="Viteza Medie:" VerticalAlignment="Top" Height="26" Width="96"/>
+        <!--TextBX Viteza-->
+        <TextBox x:Name="textboxVitezaMedie" HorizontalAlignment="Left" Height="20" Margin="157,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <!--Jante-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="263,83,0,0" TextWrapping="Wrap" Text="Jante:" VerticalAlignment="Top" Height="13" Width="50"/>
+        <!--TextBx Jante-->
+        <TextBox x:Name="textbxJante" HorizontalAlignment="Left" Height="20" Margin="313,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <!--Imagine Roata-->
+        <Image  Source="Asets\roata.png"  HorizontalAlignment="Left" Height="25" Margin="239,79,0,0" VerticalAlignment="Top" Width="34" RenderTransformOrigin="0.473,1.441"/>
+        <!--Imagine Viteza-->
+        <Image Source="Asets\viteza.png"  HorizontalAlignment="Left" Height="27" Margin="33,77,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.475,0.153"/>
+        <!--Temperatura-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="419,80,0,0" TextWrapping="Wrap" Text="Temperatura:" VerticalAlignment="Top" Height="26" Width="88"/>
+        <!--Imagine Vreme-->
+        <Image Source="Asets\vreme.png"     HorizontalAlignment="Left" Height="26" Margin="391,76,0,0" VerticalAlignment="Top" Width="28" RenderTransformOrigin="1.338,0.282"/>
+
+        <!--StackPanel Radio Btn-->
+        <StackPanel HorizontalAlignment="Left" Height="62" Margin="499,60,0,0" VerticalAlignment="Top" Width="154">
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Peste 25°C" Height="18" Width="142"/>
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Intre 5°C si 25°C" Height="17" Width="142"/>
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Sub 5°C" Height="17" Width="142"/>
+        </StackPanel>
+        <!--Text Autonomie Medie-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="307,227,0,0" TextWrapping="Wrap" Text="Autonomie Medie" VerticalAlignment="Top" Height="96" Width="376" FontSize="36"/>
+        <!--Button Calculeaza-->
+        <Button x:Name="btnCalculeaza" Foreground="#525965"   FontFamily="Cascadia Code"  Content="Calculeaza"  HorizontalAlignment="Left" Height="48" Margin="16,142,0,0" VerticalAlignment="Top" Width="160" Click="Click"/>
+        <!--Label Preia Numar Autonomie-->
+        <Label x:Name="lblNumarAutonomie"  Foreground="LimeGreen" FontFamily="Cascadia Code"        Content="." HorizontalAlignment="Left" Height="45" Margin="333,307,0,0" VerticalAlignment="Top" Width="211"/>
+        <Image x:Name="imagineDB" HorizontalAlignment="Left" Height="200" Margin="16,198,0,0" VerticalAlignment="Top" Width="261"/>
+        <TextBlock Foreground="#525965"   FontFamily="Cascadia Code"      HorizontalAlignment="Left" Margin="391,135,0,0" TextWrapping="Wrap" Text="Numarul de kilometrii parcursi:" VerticalAlignment="Top" Height="63" Width="295" FontSize="20"/>
+        <TextBox x:Name="textboxNrKilometri" HorizontalAlignment="Left" Height="32" Margin="524,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112"/>
+        <Image  Source="/Asets/harta.png"    HorizontalAlignment="Left" Height="62" Margin="313,135,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="30,25,0,0" TextWrapping="Wrap" Text="Introduceti ID" VerticalAlignment="Top" Height="26" Width="112"/>
+        <TextBox x:Name="textBoxID" HorizontalAlignment="Left" Margin="154,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
+
+
+    </Grid>
+</Page>
